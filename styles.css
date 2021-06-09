@@ -32,6 +32,7 @@
 }
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -194,16 +195,41 @@ section {
     justify-content: space-evenly;
 }
 
+/* cards for social media */
 .sm__links a {
     color: var(--darkGrey);
     padding: 40px;
+    padding-top: 164px;
     /* background: whitesmoke; */
     border: 1px solid var(--darkGrey);
     border-radius: 16px;
+    position: relative;
+    align-self: center;
+    text-align: center;
 }
 
-
-
+/* icons for sm links with pseudo classes */
+.ig::before {
+    position: absolute;
+    content: url(assets/Icon\ awesome-instagram.svg);
+    bottom: 96px;
+    left: 82px;
+    
+}
+.fb::before {
+    position: absolute;
+    content: url(assets/Icon\ metro-facebook.svg);
+    bottom: 96px;
+    left: 82px;
+    
+}
+.yt::before {
+    position: absolute;
+    content: url(assets/Icon\ awesome-youtube-square.svg);
+    bottom: 96px;
+    left: 82px;
+    
+}
 
 
 
