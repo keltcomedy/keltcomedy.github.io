@@ -416,7 +416,7 @@ span:nth-of-type(2) {
     /* VIDEOS & podcasts SECTION */
     .section2 {
         background-color: black;
-        padding-top: 6%;
+        padding-top: 12%;
         padding-bottom: 6%;
         text-align: center;
     }
@@ -451,7 +451,7 @@ span:nth-of-type(2) {
     
     /* SOCIAL MEDIA SECTION */
     .section3 {
-    padding-top: 6%;
+    padding-top: 12%;
     padding-bottom: 6%;
     text-align: center;
     }
