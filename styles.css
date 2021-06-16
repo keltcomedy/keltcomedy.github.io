@@ -79,6 +79,33 @@ nav {
     align-items: center;    
 }
 
+/* hamburger */
+.header__menu span {   
+    display: none;
+    width: 24px;
+    height: 2px;
+    background-color: var(--lightGrey);
+    margin: 4px 0;
+    transform-origin: 3px 1px;
+    transition: all 300ms ease-in-out;
+}
+
+.open span:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+.open span:nth-of-type(2) {
+    opacity: 0;
+}
+.open span:nth-of-type(3) {
+    transform: rotate(-45deg);
+}
+
+.header__mobile {
+    display: none;
+
+}
+
+
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
@@ -314,11 +341,27 @@ span:nth-of-type(2) {
         align-items: center;    
     }
     
+    /* hamburger */
+    .header__menu span {   
+        display: block;
+    }
+        
     .logo {
         font-weight: bold;
         font-size: 1rem;
     }
-    
+
+    .header__mobile.open {
+        display: block;
+        margin-top: 4%;
+        opacity: 1;
+    }
+
+    .header__mobile.open li{
+        margin: 8% 0;
+        font-size: 1rem;
+
+    }
     ul {
         display: none;
     }
@@ -498,6 +541,7 @@ span:nth-of-type(2) {
     }
 }
 
+/* TABLET */
 @media screen and (min-width:577px) and (max-width:991px) {
 
     h2 {
@@ -519,6 +563,11 @@ span:nth-of-type(2) {
         align-items: center;    
     }
     
+    /* hamburger */
+    .header__menu span {   
+        display: block;
+    }
+
     .logo {
         font-weight: bold;
         font-size: 1rem;
@@ -526,6 +575,21 @@ span:nth-of-type(2) {
     
     ul {
         display: none;
+       
+    }
+
+
+    .header__mobile.open {
+        display: block;
+        margin-top: 4%;
+        opacity: 1;
+    }
+
+    .header__mobile.open li{
+        margin: 1%;
+        font-size: 1.2rem;
+        margin: 6% 0;
+
     }
 
     section {
@@ -589,12 +653,7 @@ span:nth-of-type(2) {
         margin-bottom: 4%;
     }
     
-    /* grid for videos/podcasts */
-    /* .grid {
-        display: grid;
-        grid: repeat(4, 1fr) / repeat(1,1fr);
-        gap: 40px 24px;
-    } */
+
     
     /* video wrapper to make the iframes responsive and maintain aspect ratio */
     .videoWrapper {
@@ -624,13 +683,7 @@ span:nth-of-type(2) {
     }
     
     
-    /* .sm__links {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 8%;
-        margin-bottom: 2%;
-    } */
+
     
     /* cards for social media */
     .sm__links a {
@@ -683,22 +736,5 @@ span:nth-of-type(2) {
         background-color: black;
     }
     
-    /* flex container */
-    /* .footer__links {
-        color: var(--lightGrey);
-        font-size: 0.75rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center ;
-        align-items: center;
-    }
-    
-    span:nth-of-type(2) {
-        margin-left: 0;
-        margin-right: 0;
-    }  
 
-    span {
-        margin-bottom: 1rem;
-    } */
 }
